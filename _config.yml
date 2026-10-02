@@ -1,0 +1,25 @@
+title: "Архитектура операционных систем"
+description: "Пособие для подготовки к экзамену: ответы на 40 вопросов, шпаргалка по командам Windows, глоссарий и самопроверка"
+lang: ru
+baseurl: "/AOS-Exam"
+url: "https://ilsoft-dev.github.io"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter_opts:
+    disable: true
+
+defaults:
+  - scope: { path: "q" }
+    values: { layout: question }
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
